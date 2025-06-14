@@ -19,7 +19,7 @@ const blogPosts: BlogPost[] = [
   {
     id: '1',
     title: 'Why Interpretability Matters',
-    author: 'Your Name',
+    author: 'Hakan Ören',
     date: 'June 2025',
     excerpt: 'In an era where artificial intelligence systems are becoming increasingly sophisticated and ubiquitous, the question of interpretability has moved from academic curiosity to critical necessity.',
     readTime: '8 min read',

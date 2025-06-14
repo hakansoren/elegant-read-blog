@@ -6,7 +6,7 @@ import ThemeToggle from './ThemeToggle';
 
 const blogPost = {
   title: "Why Interpretability Matters",
-  author: "Your Name",
+  author: "Hakan Ören",
   date: "June 2025",
   sections: [
     {
