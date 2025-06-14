@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -37,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -99,5 +93,66 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #505050;
+  }
+}
+
+@layer components {
+  .blog-prose {
+    @apply font-serif text-blog-text leading-relaxed;
+  }
+  
+  .blog-prose h1 {
+    @apply font-sans font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-6 leading-tight;
+  }
+  
+  .blog-prose h2 {
+    @apply font-sans font-semibold text-2xl md:text-3xl text-white mb-4 mt-8 leading-tight;
+  }
+  
+  .blog-prose h3 {
+    @apply font-sans font-medium text-xl md:text-2xl text-white mb-3 mt-6 leading-tight;
+  }
+  
+  .blog-prose p {
+    @apply mb-6 text-lg leading-relaxed;
+  }
+  
+  .blog-prose a {
+    @apply text-blog-accent hover:underline transition-all duration-200;
+  }
+  
+  .blog-prose blockquote {
+    @apply border-l-4 border-blog-accent pl-6 italic text-blog-text-secondary my-6;
+  }
+  
+  .blog-prose ul, .blog-prose ol {
+    @apply mb-6 pl-6;
+  }
+  
+  .blog-prose li {
+    @apply mb-2 text-lg leading-relaxed;
   }
 }
