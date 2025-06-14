@@ -1,12 +1,12 @@
 
 import React from 'react';
 import { ThemeProvider } from '@/contexts/ThemeContext';
-import BlogLayout from '@/components/BlogLayout';
+import BlogHomepage from '@/components/BlogHomepage';
 
 const Index = () => {
   return (
     <ThemeProvider>
-      <BlogLayout />
+      <BlogHomepage />
     </ThemeProvider>
   );
 };
